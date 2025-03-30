@@ -1,4 +1,4 @@
-# Book API
+# Books API
 
 A RESTful API for managing books with user authentication using Express.js, MongoDB, JWT, and Dockerization.
 
