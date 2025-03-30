@@ -57,7 +57,7 @@ const BookList = () => {
           return;
         }
         
-        let url = `http://localhost:4000/getbooks?page=${page}&limit=5`;
+        let url = `https://books-api-lslo.onrender.com/getbooks?page=${page}&limit=5`;
         
         if (sortField) {
           url += `&sortBy=${sortField}&order=${sortOrder}`;
@@ -100,7 +100,7 @@ const BookList = () => {
         return;
       }
       
-      const response = await axios.get(`http://localhost:4000/searchbooks?title=${searchTerm}`, {
+      const response = await axios.get(`https://books-api-lslo.onrender.com/searchbooks?title=${searchTerm}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

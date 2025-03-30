@@ -43,7 +43,7 @@ const Register = () => {
     setError('');
 
     try {
-      await axios.post('http://localhost:4000/register', formData);
+      await axios.post('https://books-api-lslo.onrender.com/register', formData);
       navigate('/login');
     } catch (err) {
       setError(err.response?.data?.error || 'Registration failed. Please try again.');

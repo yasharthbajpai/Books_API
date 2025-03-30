@@ -39,7 +39,7 @@ const BookDetails = () => {
           return;
         }
         
-        const response = await axios.get(`http://localhost:4000/getbook/${id}`, {
+        const response = await axios.get(`https://books-api-lslo.onrender.com/getbook/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
